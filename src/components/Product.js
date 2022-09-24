@@ -3,6 +3,7 @@ import "./Product.css";
 import StarIcon from "@mui/icons-material/Star";
 import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 import { useStateValue } from "../StateProvider";
+import { Link } from "react-router-dom";
 
 const Product = ({ id, title, image, price, rating }) => {
   const [{}, dispatch] = useStateValue();
@@ -39,7 +40,9 @@ const Product = ({ id, title, image, price, rating }) => {
         </div>
       </div>
       <img className="product_img" src={image} alt="" />
-      <button onClick={addToCart}>Add To Cart</button>
+      <Link to="/checkout">
+        <button onClick={addToCart}>Add To Cart</button>
+      </Link>
     </div>
   );
 };
