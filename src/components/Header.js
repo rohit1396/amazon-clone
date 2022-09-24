@@ -39,7 +39,7 @@ const Header = () => {
             <span className="navbar_optionTwo">Prime</span>
           </div>
         </Link>
-        <Link to="/" className="navbar_link">
+        <Link to="/checkout" className="navbar_link">
           <div className="navbar_optionBasket">
             <ShoppingBasketIcon />
             <span className="navbar_basketCount">{cart.length}</span>
