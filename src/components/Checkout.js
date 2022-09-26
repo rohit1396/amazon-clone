@@ -26,14 +26,17 @@ const Checkout = () => {
         </div>
       ) : (
         <div>
+          <h2 className="checkout_title">Your Shopping Basket</h2>
           {cart.map((item) => (
-            <CheckoutProduct
-              id={item.id}
-              image={item.image}
-              title={item.title}
-              price={item.price}
-              rating={item.rating}
-            />
+            <div>
+              <CheckoutProduct
+                id={item.id}
+                image={item.image}
+                title={item.title}
+                price={item.price}
+                rating={item.rating}
+              />
+            </div>
           ))}
         </div>
       )}
