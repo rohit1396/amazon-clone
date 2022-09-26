@@ -13,13 +13,13 @@ const CheckoutProduct = ({ id, image, title, price, rating }) => {
     });
   };
   return (
-    <div>
+    <div className="checkoutProduct">
       <img className="checkoutProduct_image" src={image} alt="" />
       <div className="checkoutProduct_info">
         <h2 className="checkoutProduct_title">{title}</h2>
         <p className="checkoutProduct_price">
           <small>
-            <CurrencyRupeeIcon />
+            <CurrencyRupeeIcon className="priceIcon" />
           </small>
           <strong>{price}</strong>
         </p>
@@ -28,7 +28,7 @@ const CheckoutProduct = ({ id, image, title, price, rating }) => {
             .fill()
             .map((_) => (
               <p>
-                <StarIcon />
+                <StarIcon className="starIcon" />
               </p>
             ))}
         </p>
