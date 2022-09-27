@@ -37,7 +37,7 @@ const Home = () => {
         <Product
           id="12321344"
           title="boAt Airdopes 141 True Wireless Earbuds with 42H Playtime, Beast™ Mode(Low Latency Upto 80ms)"
-          price={1487}
+          price={1487.98}
           rating={4}
           image="\Images\31GUbeFG3FL._AC_SX184_.jpg"
         />
