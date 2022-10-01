@@ -1,0 +1,27 @@
+.signin_form {
+   height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.signin_logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100px;
+    object-fit: contain;
+}
+
+.signin_container {
+    max-width: 400px;
+    min-width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+}
+
+.signin_container > form > h5 {
+    font-size: 18px;
+}
