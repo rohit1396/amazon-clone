@@ -21,7 +21,7 @@ const Header = () => {
         <SearchIcon className="navbar_searchIcon" />
       </div>
       <div className="navbar_nav">
-        <Link to="/" className="navbar_link">
+        <Link to="/login" className="navbar_link">
           <div className="navbar_option">
             <span className="navbar_optionOne">Hello</span>
             <span className="navbar_optionTwo">Sign In</span>
