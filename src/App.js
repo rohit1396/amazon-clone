@@ -4,6 +4,7 @@ import "./App.css";
 import Checkout from "./components/Checkout";
 import Header from "./components/Header";
 import Home from "./components/Home";
+import SignIn from "./components/SignIn";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             </>
           }
         />
+        <Route path="/login" element={<SignIn />} />
       </Routes>
     </div>
   );
