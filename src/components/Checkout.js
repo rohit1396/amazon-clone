@@ -18,7 +18,7 @@ const Checkout = () => {
         <Link to="/">
           <button>Add Items</button>
         </Link>
-        {cart.length == 0 ? (
+        {cart.length === 0 ? (
           <div>
             <h2>Your Shopping Cart Is Empty</h2>
             <p>There is no items available in your shopping cart. </p>
