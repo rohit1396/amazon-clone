@@ -5,15 +5,18 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { StateProvider } from "./StateProvider";
+import { AuthContextProvider } from "./AuthContext";
 import reducer, { initialstate } from "./reducer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <StateProvider initialstate={initialstate} reducer={reducer}>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </StateProvider>
+  <AuthContextProvider>
+    <StateProvider initialstate={initialstate} reducer={reducer}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </StateProvider>
+  </AuthContextProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
