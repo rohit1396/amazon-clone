@@ -5,10 +5,12 @@ import Checkout from "./components/Checkout";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import SignIn from "./components/SignIn";
+// import { AuthContextProvider } from "./AuthContext";
 
 function App() {
   return (
     <div className="app">
+      {/* <AuthContextProvider> */}
       <Routes>
         <Route
           path="/"
@@ -30,6 +32,7 @@ function App() {
         />
         <Route path="/login" element={<SignIn />} />
       </Routes>
+      {/* </AuthContextProvider> */}
     </div>
   );
 }

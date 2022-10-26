@@ -1,4 +1,4 @@
-// we need to create a data layer to pass through the components
+// we need to create a data layer to pass state through the components
 
 import React, { createContext, useContext, useReducer } from "react";
 
