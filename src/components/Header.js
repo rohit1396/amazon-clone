@@ -4,9 +4,21 @@ import "./Header.css";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import { useStateValue } from "../StateProvider";
+import { UserAuth } from "../AuthContext";
+import { auth } from "../firebase";
 
 const Header = () => {
   const [{ cart }] = useStateValue();
+  const { user } = UserAuth();
+  const { logOut } = UserAuth();
+
+  const handleLogout = async (e) => {
+    try {
+      await logOut();
+    } catch (e) {
+      console.log(e.message);
+    }
+  };
   return (
     <nav className="navbar">
       <Link to="/">
@@ -21,10 +33,12 @@ const Header = () => {
         <SearchIcon className="navbar_searchIcon" />
       </div>
       <div className="navbar_nav">
-        <Link to="/login" className="navbar_link">
-          <div className="navbar_option">
-            <span className="navbar_optionOne">Hello</span>
-            <span className="navbar_optionTwo">Sign In</span>
+        <Link to={!user && "/login"} className="navbar_link">
+          <div className="navbar_option" onClick={handleLogout}>
+            <span className="navbar_optionOne">Hello {user?.email}</span>
+            <span className="navbar_optionTwo">
+              {user ? "Sign Out" : "Sign In"}
+            </span>
           </div>
         </Link>
         <Link to="/" className="navbar_link">
