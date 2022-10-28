@@ -5,6 +5,7 @@ import Checkout from "./components/Checkout";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import SignIn from "./components/SignIn";
+import Signup from "./components/Signup";
 // import { AuthContextProvider } from "./AuthContext";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           }
         />
         <Route path="/login" element={<SignIn />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
       {/* </AuthContextProvider> */}
     </div>
