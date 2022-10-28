@@ -1,5 +1,5 @@
 .signin_form {
-   height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,4 +24,35 @@
 
 .signin_container > form > h5 {
     font-size: 18px;
+    margin: 10px 0;
+}
+
+.signin_container > form > input {
+    width: 90%;
+    height: 10px;
+    padding: 15px;
+    outline: none;
+    font-size: 20px;
+}
+
+.signin_container > form > button {
+    display: flex;
+    height: 20px;
+    padding: 15px;
+    width: 99%;
+    margin-top: 10px;
+    font-size: 15px;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.signup_link {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.signup_link > a {    
+    text-decoration: none;
+    color: #f0c14b;
 }

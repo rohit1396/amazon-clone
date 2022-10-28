@@ -53,6 +53,10 @@ const SignIn = () => {
             information read amazon's policy of return, Cookies policy and ad of
             interest policy.{" "}
           </p>
+          <p className="signup_link">
+            Don't have an account
+            <Link to="/signup"> Click here</Link>
+          </p>
         </form>
       </div>
     </div>
