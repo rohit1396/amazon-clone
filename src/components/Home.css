@@ -18,3 +18,20 @@
     margin-left: 5px;
     margin-right: 5px;
 }
+
+/* **************************** !- media queries -! **************************** */
+
+@media only screen and (max-width: 650px){
+    .home_img {
+        margin-bottom: -50px
+    }
+    .home_product {
+        display: block;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 1200px) {
+    .home_img {
+        margin-bottom: -150px
+    }
+}

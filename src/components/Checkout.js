@@ -15,6 +15,11 @@ const Checkout = () => {
           src="\Images\ILB_WordCount_NotApproved._CB1613492740_._TTW_.jpg"
           alt=""
         />
+        {cart?.length > 0 && (
+          <div className="checkout_right">
+            <Subtotal />
+          </div>
+        )}
         <Link to="/">
           <button>Add Items</button>
         </Link>
@@ -41,11 +46,6 @@ const Checkout = () => {
           </div>
         )}
       </div>
-      {cart?.length > 0 && (
-        <div className="checkout_right">
-          <Subtotal />
-        </div>
-      )}
     </div>
   );
 };
