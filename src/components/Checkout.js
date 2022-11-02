@@ -9,14 +9,14 @@ const Checkout = () => {
   const [{ cart }] = useStateValue();
   return (
     <div className="checkout">
-      <div className="checkout_left">
+      <div>
         <img
           className="checkout_advertise_img"
           src="\Images\ILB_WordCount_NotApproved._CB1613492740_._TTW_.jpg"
           alt=""
         />
         {cart?.length > 0 && (
-          <div className="checkout_right">
+          <div className="checkout_subtotal">
             <Subtotal />
           </div>
         )}

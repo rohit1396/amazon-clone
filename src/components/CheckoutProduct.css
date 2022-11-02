@@ -1,6 +1,5 @@
 .checkoutProduct {
     display: flex;
-    /* height: max-content; */
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -39,4 +38,28 @@
     border: 1px solid;
     border-color: #a88734 #9c7e31 #846a29;
     cursor: pointer;
+}
+
+/* ***************************** Media Queries ***************************** */
+
+@media only screen and (max-width: 400px){
+    .checkoutProduct_image {
+        width: 100px;
+        height: 100px;
+    }
+    .checkoutProduct_title {
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
+
+@media (min-width:401px) and (max-width: 650px){
+    .checkoutProduct_image {
+        width: 150px;
+        height: 150px;
+    }
+    .checkoutProduct_title {
+        font-size: 15px;
+        font-weight: 600;
+    }
 }

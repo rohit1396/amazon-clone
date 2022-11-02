@@ -18,9 +18,18 @@
 }
 
 .checkout > div > a > button {
+    margin: 20px 0px;
     min-width: 100px;
     background-color: #f0c14b;
     border: 1px solid;
     border-color: #a88734 #9c7e31 #846a29;
     cursor: pointer;
+}
+
+/* ********************** Media Queries ************************* */
+@media only screen and (max-width: 400px)
+{
+    .checkout_subtotal {
+        display: flex;
+    }
 }
