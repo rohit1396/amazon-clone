@@ -52,5 +52,25 @@
 
 .signup_container > form > p > a{
     text-decoration: none;
-    color: #f0c14b;
+    color: #ffb700;
+}
+
+/* ************************* Media Queries **************************** */
+@media only screen and (max-width: 375px){
+    .signup_container {
+        max-width: 250px;
+    }
+    .signup_container > form > h5 {
+        font-size: 15px;
+    }
+    .signup_container > form > button {
+        width: 104%;
+        margin-bottom: 10px;
+    }
+    .signup_container > form > p {
+        font-size: 13px;
+    }
+    .signup_container > form > input {
+        font-size: 15px;
+    }
 }
